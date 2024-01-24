@@ -1,0 +1,245 @@
+
+* {
+
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+
+  background: url(/water.gif);
+  background-repeat: no-repeat;
+  background-size: cover;
+
+
+ }
+
+
+ .Container {
+
+    margin: o auto;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    position: relative;
+    top: 180px;
+    animation-name: Animate;
+    animation-duration: 2s;
+    animation-delay: 1s;
+    transition: all ease-in-out 2s 2ms ;
+    position: absolute;
+    left: 450px;
+   
+ }
+
+
+
+ form {
+
+
+    width: 280px;
+    height: 280px;
+    border: 2px solid black;
+    padding: 30px;
+    text-align: center;
+    background-color: rgb(245, 196, 169);
+    color: black;
+    border-radius: 2px solid black;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.10);
+
+
+ }
+
+ .inputs {
+
+    margin-top: 10px;
+ }
+
+
+ .inputs input {
+
+    width: 220px;
+    /* margin-top: 10px; */
+background-color: transparent; 
+padding-top: 15px;
+
+}
+
+
+::placeholder {
+    color: gray;
+  }
+
+
+
+
+
+  .inputs input:focus{
+
+    border-bottom: 3px solid rgb(70,14,126); 
+
+  }
+
+  input {
+    background: transparent;
+    border: none;
+    outline: none; /* This removes the default focus outline, adjust as needed */
+  }
+
+ button {
+
+    width: 220px;
+    background-color: rgb(70,14,126);
+    color: white;
+    font-weight: 600;
+    height: 25px;
+    border-radius: 5px;
+
+    
+  }
+
+  .btn {
+
+    padding-top: 14px;
+  }
+
+  button:hover{
+    background-color: rgb(228,39,191);
+    transition: all 2s linear 1s;
+  }
+
+  button:active{
+
+    transition: 2ms;
+    transform: scale(0.90);
+  }
+
+  .ptags {
+
+    display: flex;
+    font-size: 14px;
+    padding-top: 10px;
+    justify-content: space-around;
+  }
+
+  .H2 h2 {
+
+    display: inline;
+    white-space: nowrap;
+    font-size: 17px;
+   
+  }
+
+  .H2 {
+
+    padding-right: 36px;
+  }
+
+
+
+  /* @keyframes Animate {
+
+    from{
+
+      left:0;
+
+    }
+
+    to {
+
+      left: 5pxx;
+      top:10px
+      
+    }
+    
+  } */
+
+
+  /* @keyframes Animate {
+
+    0%{
+
+      left:0;
+
+    }
+
+
+    50%{
+
+      right: 10x;
+    }
+
+    70%{
+
+      top: 10x;
+    }
+
+    90%{
+
+      left: 10px;
+
+
+    }
+
+    100% {
+
+      left: 5pxx;
+      top:10px
+      
+    }
+    
+  } */
+
+
+  .fishimg {
+
+    width: 150x;
+    height: 150px;
+    animation: fishSwim 10s linear infinite;
+    position: fixed;
+    transition: all 2s ease-in-out 2s;
+
+  }
+
+
+
+  
+
+
+@keyframes fishSwim {
+
+  0%{
+
+    left: 0;
+  }
+  
+  10%{
+left: 10%;
+bottom: 50%;
+
+  }
+
+
+  50%{
+right: 20%;
+top: 40%;
+
+  }
+
+  75%{
+
+    left: 40%;
+    bottom: 20%;
+  }
+
+  100%{
+
+    left: 80%;
+    bottom: 10%;
+
+  }
+
+
+}
